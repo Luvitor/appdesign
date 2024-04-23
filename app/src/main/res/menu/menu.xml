@@ -5,12 +5,19 @@
         android:icon="@drawable/ic_baseline_home"
         android:title="Home" />
     <item
-        android:id="@+id/mNotifications"
-        android:icon="@drawable/ic_baseline_notifications"
-        android:title="Notifications" />
+        android:id="@+id/mSearch"
+        android:icon="@drawable/baseline_search"
+        android:title="Search" />
     <item
-        android:id="@+id/mSettings"
-        android:icon="@drawable/ic_baseline_settings"
-        android:title="Settings" />
-
+        android:id="@+id/mAdd"
+        android:icon="@drawable/baseline_add_box"
+        android:title="New Post" />
+    <item
+        android:id="@+id/mFavorite"
+        android:icon="@drawable/baseline_favorite"
+        android:title="Favorite" />
+    <item
+        android:id="@+id/mAccount"
+        android:icon="@drawable/baseline_account_circle"
+        android:title="Account" />
 </menu>
