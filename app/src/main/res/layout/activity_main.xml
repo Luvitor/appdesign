@@ -11,13 +11,14 @@
         android:id="@+id/ProfilePic"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:src="@drawable/neymar"/>
+        android:src="@drawable/neymar"
+        />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        layout android:layout_below="@id/ProfilePic">
+        android:layout_alignBaseline="@id/ProfilePic">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"
@@ -36,12 +37,10 @@
 
     </com.google.android.material.tabs.TabLayout>
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRecyclerLivros"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/tabLayout" />
-
+        android:layout_height="match_parent" />
 
     <FrameLayout
         android:id="@+id/frmContainer"
@@ -54,7 +53,7 @@
         android:id="@+id/bottomNavView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+
         app:menu="@menu/menu" />
 
 </RelativeLayout>
